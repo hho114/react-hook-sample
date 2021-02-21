@@ -17,10 +17,6 @@ function Ingredients() {
     )
       .then((response) => {
         return response.json();
-        setUserIngredients((prevIngredients) => [
-          ...prevIngredients,
-          { id: Math.random().toString(), ...ingredient },
-        ]);
       })
       .then((responseData) => {
         setUserIngredients((prevIngredients) => [
